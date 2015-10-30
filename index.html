@@ -17,7 +17,7 @@ layout: blog
 {% if site.paginate %}
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">
+    <a href="{{ site.baseurl | append: paginator.previous_page_path }}" class="previous">
       <i class=" fa fa-arrow-circle-left"></i>
       Previa
     </a>
@@ -40,7 +40,7 @@ layout: blog
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">
+    <a href="{{ site.baseurl | append: paginator.next_page_path }}" class="next">
       Siguiente
       <i class=" fa fa-arrow-circle-right"></i>
     </a>

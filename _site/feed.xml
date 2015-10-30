@@ -3,10 +3,10 @@
   <channel>
     <title>Pewen Blog</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
-    <link>https://pewen.github.io/</link>
-    <atom:link href="https://pewen.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 30 Oct 2015 16:31:21 -0300</pubDate>
-    <lastBuildDate>Fri, 30 Oct 2015 16:31:21 -0300</lastBuildDate>
+    <link>https://pewen.github.io/blog/</link>
+    <atom:link href="https://pewen.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 30 Oct 2015 16:39:35 -0300</pubDate>
+    <lastBuildDate>Fri, 30 Oct 2015 16:39:35 -0300</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -26,8 +26,8 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 
 </description>
         <pubDate>Wed, 16 Sep 2015 12:34:15 -0300</pubDate>
-        <link>https://pewen.github.io/2015/09/16/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">https://pewen.github.io/2015/09/16/welcome-to-jekyll/</guid>
+        <link>https://pewen.github.io/blog/2015/09/16/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">https://pewen.github.io/blog/2015/09/16/welcome-to-jekyll/</guid>
         
         <category>Jekyll</category>
         
@@ -54,8 +54,8 @@ mmodo a tellus. Class aptent taciti sociosqu ad litora torquent per conubia\
  nostra, per inceptos himenaeos. Etiam tincidunt porttitor nibh at semper.&lt;/p&gt;
 </description>
         <pubDate>Thu, 10 Sep 2015 00:00:00 -0300</pubDate>
-        <link>https://pewen.github.io/2015/09/10/Lore%20test2/</link>
-        <guid isPermaLink="true">https://pewen.github.io/2015/09/10/Lore%20test2/</guid>
+        <link>https://pewen.github.io/blog/2015/09/10/Lore%20test2/</link>
+        <guid isPermaLink="true">https://pewen.github.io/blog/2015/09/10/Lore%20test2/</guid>
         
         <category>Example</category>
         
@@ -82,8 +82,8 @@ mmodo a tellus. Class aptent taciti sociosqu ad litora torquent per conubia\
  nostra, per inceptos himenaeos. Etiam tincidunt porttitor nibh at semper.&lt;/p&gt;
 </description>
         <pubDate>Thu, 10 Sep 2015 00:00:00 -0300</pubDate>
-        <link>https://pewen.github.io/2015/09/10/Lore%20test/</link>
-        <guid isPermaLink="true">https://pewen.github.io/2015/09/10/Lore%20test/</guid>
+        <link>https://pewen.github.io/blog/2015/09/10/Lore%20test/</link>
+        <guid isPermaLink="true">https://pewen.github.io/blog/2015/09/10/Lore%20test/</guid>
         
         <category>Example</category>
         
@@ -110,8 +110,8 @@ mmodo a tellus. Class aptent taciti sociosqu ad litora torquent per conubia\
  nostra, per inceptos himenaeos. Etiam tincidunt porttitor nibh at semper.&lt;/p&gt;
 </description>
         <pubDate>Thu, 10 Sep 2015 00:00:00 -0300</pubDate>
-        <link>https://pewen.github.io/2015/09/10/Lore/</link>
-        <guid isPermaLink="true">https://pewen.github.io/2015/09/10/Lore/</guid>
+        <link>https://pewen.github.io/blog/2015/09/10/Lore/</link>
+        <guid isPermaLink="true">https://pewen.github.io/blog/2015/09/10/Lore/</guid>
         
         <category>Example</category>
         
@@ -138,8 +138,8 @@ e porta. Vivamus ullamcorper consectetur odio, vitae imperdiet mi laoreet v\
 itae. Fusce ante ligula, cursus eget volutpat vel, pretium eget tellus.&lt;/p&gt;
 </description>
         <pubDate>Mon, 02 Mar 2015 00:00:00 -0300</pubDate>
-        <link>https://pewen.github.io/2015/03/02/Elit%20test2%20(copy)/</link>
-        <guid isPermaLink="true">https://pewen.github.io/2015/03/02/Elit%20test2%20(copy)/</guid>
+        <link>https://pewen.github.io/blog/2015/03/02/Elit%20test2%20(copy)/</link>
+        <guid isPermaLink="true">https://pewen.github.io/blog/2015/03/02/Elit%20test2%20(copy)/</guid>
         
         <category>Test</category>
         
@@ -166,8 +166,8 @@ e porta. Vivamus ullamcorper consectetur odio, vitae imperdiet mi laoreet v\
 itae. Fusce ante ligula, cursus eget volutpat vel, pretium eget tellus.&lt;/p&gt;
 </description>
         <pubDate>Mon, 02 Mar 2015 00:00:00 -0300</pubDate>
-        <link>https://pewen.github.io/2015/03/02/Elit%20test2%20(another%20copy)/</link>
-        <guid isPermaLink="true">https://pewen.github.io/2015/03/02/Elit%20test2%20(another%20copy)/</guid>
+        <link>https://pewen.github.io/blog/2015/03/02/Elit%20test2%20(another%20copy)/</link>
+        <guid isPermaLink="true">https://pewen.github.io/blog/2015/03/02/Elit%20test2%20(another%20copy)/</guid>
         
         <category>Test</category>
         
@@ -194,8 +194,8 @@ e porta. Vivamus ullamcorper consectetur odio, vitae imperdiet mi laoreet v\
 itae. Fusce ante ligula, cursus eget volutpat vel, pretium eget tellus.&lt;/p&gt;
 </description>
         <pubDate>Mon, 02 Mar 2015 00:00:00 -0300</pubDate>
-        <link>https://pewen.github.io/2015/03/02/Elit%20test2/</link>
-        <guid isPermaLink="true">https://pewen.github.io/2015/03/02/Elit%20test2/</guid>
+        <link>https://pewen.github.io/blog/2015/03/02/Elit%20test2/</link>
+        <guid isPermaLink="true">https://pewen.github.io/blog/2015/03/02/Elit%20test2/</guid>
         
         <category>Test</category>
         
@@ -222,8 +222,8 @@ e porta. Vivamus ullamcorper consectetur odio, vitae imperdiet mi laoreet v\
 itae. Fusce ante ligula, cursus eget volutpat vel, pretium eget tellus.&lt;/p&gt;
 </description>
         <pubDate>Mon, 02 Mar 2015 00:00:00 -0300</pubDate>
-        <link>https://pewen.github.io/2015/03/02/Elit%20test/</link>
-        <guid isPermaLink="true">https://pewen.github.io/2015/03/02/Elit%20test/</guid>
+        <link>https://pewen.github.io/blog/2015/03/02/Elit%20test/</link>
+        <guid isPermaLink="true">https://pewen.github.io/blog/2015/03/02/Elit%20test/</guid>
         
         <category>Test</category>
         
@@ -250,8 +250,8 @@ e porta. Vivamus ullamcorper consectetur odio, vitae imperdiet mi laoreet v\
 itae. Fusce ante ligula, cursus eget volutpat vel, pretium eget tellus.&lt;/p&gt;
 </description>
         <pubDate>Mon, 02 Mar 2015 00:00:00 -0300</pubDate>
-        <link>https://pewen.github.io/2015/03/02/Elit/</link>
-        <guid isPermaLink="true">https://pewen.github.io/2015/03/02/Elit/</guid>
+        <link>https://pewen.github.io/blog/2015/03/02/Elit/</link>
+        <guid isPermaLink="true">https://pewen.github.io/blog/2015/03/02/Elit/</guid>
         
         <category>Test</category>
         
