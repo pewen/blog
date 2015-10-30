@@ -1,0 +1,41 @@
+<div class="box">
+  <h2 class="box-title">Related post</h2>
+  <div class="row">
+  {% for post in site.posts %}
+  {% if page.title != post.title %}
+
+    {% assign sameTagCount = 0 %}
+    {% assign commonTags = '' %}
+
+    {% for tag in post.tags %}
+      {% if page.tags contains tag %}
+
+        {% assign sameTagCount = sameTagCount | plus: 1 %}
+        {% capture tagmarkup %} 
+          <span>
+	    <i class="fa fa-tag"></i>
+	    <a href="/tag#{{ tag | downcase}}" rel="category tag">
+	      {{ tag }}
+	    </a>
+	  </span>
+        {% endcapture %}
+        {% assign commonTags = commonTags | append: tagmarkup %}
+
+      {% endif %}
+    {% endfor %}
+
+    {% if sameTagCount >= 1 %}
+      <div class="col-sm-6 col-md-4">
+	<img class="full-img" alt="{{ post.image-description }}" src="{{ site.baseurl }}{{ post.image }}" />
+        <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+	<div class="entry-meta relate-meta">
+	  {{ post.date | date_to_long_string }}
+	  {{ commonTags }}
+	</div><!--/entry-meta -->
+      </div><!--/col -->
+    {% endif %}
+
+  {% endif %}
+  {% endfor %}
+  </div><!--/row -->
+</div><!--/box -->

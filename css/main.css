@@ -1,0 +1,251 @@
+/* Personal CSS */
+
+/* Author: @fnbellomo
+ */
+
+/****************************************
+ * Base structure
+ ****************************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.50;
+    color: #212121;
+    font-weight: 300;
+    background: #FAFAFA none repeat scroll 0% 0%;
+    padding-top: 0px;
+}
+
+.site-name {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: #212121;
+    text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+		      color: #0193e0;
+		      outline: 0px none;
+		      text-decoration: none;
+		      transition: all 0.25s linear 0s;
+		  }
+
+ol, ul {
+    list-style: outside none none;
+}
+
+
+/****************************************
+ * Blog-index
+ ****************************************/
+.header-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important; 
+    width: 1px !important; 
+    overflow: hidden;
+}
+
+
+/****************************************
+ * Blog-index
+ ****************************************/
+.main {
+    padding-top: 100px;
+}
+
+.entry {
+    background: #FFF none repeat scroll 0% 0%;
+    margin-bottom: 30px;
+    border-bottom: 5px solid #FF5722;
+}
+
+.full-img {
+    width: 100%;
+}
+
+.entry-header {
+    text-align: center;
+}
+
+.entry-header h3 {
+    color: #212121;
+    line-height: 120%;
+    font-family: "Playfair Display";
+    text-transform: none;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.24s ease-in-out 0s;
+}
+
+.entry-meta {
+    color: #212121;
+    font-family: Lato;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.24s ease-in-out 0s;
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+}
+
+.entry-meta span {
+    padding: 10px 10px 10px 0px;
+}
+
+.entry-content {
+    padding: 5% 7.5%;
+}
+
+.entry-more {
+    font-family: Oswald;
+    line-height: 20px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.24s ease-in-out 0s;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.entry-more a {
+    border: 1px solid #0193e0;
+    display: inline-block;
+    margin: 20px 0px 25px;
+    padding: 10px 20px;
+    transition: all 0.25s linear 0s;
+}
+.entry-more a:hover {
+    background: #0193e0;
+    color: #FFF;
+    margin: 20px 0px 25px;
+    padding: 10px 20px;
+    transition: all 0.25s linear 0s;
+}
+
+.entry-footer {
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.entry-social a {
+    border: 1px solid #DEDEDE;
+    float: left;
+    font-size: 18px;
+    margin: 0px 5px 5px 0px;
+    padding: 8px 0px;
+    text-align: center;
+    width: 38px;
+    transition: all 0.2s ease-in-out;
+}
+
+.entry-social li.twitter a:hover {
+    color: #55acee;
+}
+
+.entry-social li.facebook a:hover {
+    color: #3b5998;
+}
+
+.entry-social li.google a:hover {
+    color: #b31217;
+}
+
+
+/****************************************
+ * Pagination
+ ****************************************/
+.page-numbers {
+    display: inline-block;
+    padding: 5px 15px;
+    color: #FFF;
+    background: #343434 none repeat scroll 0% 0%;
+}
+
+.page-numbers:hover {
+    background: #0193e0 none repeat scroll 0% 0%;
+    color: white;
+    transition: all 0.25s linear 0s;
+}
+
+.page-current {
+    background: #0193e0;
+}
+
+
+/****************************************
+ * Box
+ ****************************************/
+.box {
+    padding: 20px;
+    background: #FFF none repeat scroll 0% 0%;
+    margin-bottom: 30px;
+    border-bottom: 5px solid #FF5722;
+}
+
+.box-title {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #EEE;
+}
+
+.box-thumbnail img {
+    width: 100%;
+    height: 100%;
+}
+
+.box-author {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.box-tag a {
+    padding: 0px 0.5rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+/****************************************
+ * Footer
+ ****************************************/
+footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    text-align: center;
+    color: #FFF;
+}
+
+.last-footer {
+    background-color: #333C4E;
+}
+
+.sky-blue {
+    color: #89C4F4;
+}

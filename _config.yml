@@ -1,0 +1,25 @@
+# Site settings
+title: Pewen Blog
+email: your-email@domain.com
+description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+encoding: utf-8
+
+# Server
+baseurl: ""
+url: "http://yourdomain.com"
+
+# Time zone
+timezone: America/Argentina/Cordoba
+
+# Pagination
+paginate: 4
+paginate_path: "/page:num/"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+exclude: [.git, .gitignore]
+
+# Social links
+twitter_username: jekyllrb
+github_username:  jekyll
