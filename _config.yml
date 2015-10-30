@@ -6,7 +6,7 @@ encoding: utf-8
 
 # Server
 baseurl: ""
-url: "http://yourdomain.com"
+url: "https://pewen.github.io/blog"
 
 # Time zone
 timezone: America/Argentina/Cordoba
