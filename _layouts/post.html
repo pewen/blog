@@ -1,0 +1,10 @@
+---
+layout: blog
+---
+
+<h2 class="header-hidden">Post {{ page.date | date_to_long_string }}</h2>
+
+{% assign post = page %}
+{% include post_estructure.html %}
+
+{% include relate_post.html %}
