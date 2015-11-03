@@ -5,8 +5,8 @@ description: "Write an awesome description for your new site here. You can edit 
 encoding: utf-8
 
 # Server
-baseurl: "/blog"
-url: "https://pewen.github.io"
+baseurl: ""
+url: "http://yourdomain.com"
 
 # Time zone
 timezone: America/Argentina/Cordoba

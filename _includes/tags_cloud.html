@@ -30,25 +30,17 @@ The following part removes dulpicated tags and invalid tags like blank tag.
     {% endif %}
 {% endfor %}
 
-
 {% comment %}
 The purpose of this snippet is to list all the tags you have in your site.
 {% endcomment %}
 
 <div class="box">
-  <div class="box-content">
-    <h2 class="box-title">
-      Tags cloud
-    </h2>
-    <div class="box-text">
-      <div class="box-tag">
-	{% for tag in tags %}
-
-	  <a href="{{ site.baseurl }}/tags/{{ tag | downcase }}">
-	  <i class="fa fa-tag"></i> {{ tag }} 
-	</a>
-	{% endfor %}
-      </div><!--/box-author -->
-    </div><!--/box-text -->
-  </div><!--/box-content -->
+  <h2 class="box-title">Tags cloud</h2>
+  <div class="box-tag">
+    {% for tag in tags %}
+    <a href="{{ site.baseurl }}/tags/{{ tag | downcase }}">
+      <i class="fa fa-tag"></i> {{ tag }} 
+    </a>
+    {% endfor %}
+  </div><!--/box-tag -->
 </div><!--/box -->
