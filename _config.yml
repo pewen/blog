@@ -1,12 +1,12 @@
 # Site settings
 title: Pewen Blog
-email: your-email@domain.com
+email: fnbellomo@gmail.com
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 encoding: utf-8
 
 # Server
-baseurl: ""
-url: "http://yourdomain.com"
+baseurl: "/blog"
+url: "https://pewen.github.io"
 
 # Time zone
 timezone: America/Argentina/Cordoba
