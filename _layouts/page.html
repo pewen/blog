@@ -1,14 +1,63 @@
 ---
-layout: default
+layout: blog
 ---
-<div class="post">
 
-  <header class="post-header">
-    <h1>{{ page.title }}</h1>
+<article class="entry">
+
+  {% if page.image %}
+  <div class="entry-img">
+    <a href="{{ site.baseurl }}{{ page.url }}">
+      <img src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.image-description }}" />
+    </a>
+  </div>
+  {% endif %}
+  
+  <header class="entry-header">
+    <h3>
+      <a href="{{ site.baseurl }}{{ page.url }}">
+        {{ page.title }}
+      </a>
+    </h3>
+
+    <div class="entry-meta">
+      <span>
+	{% for tag in page.tags %}
+	<i class="fa fa-tag"></i>
+	<a href="/tag#{{ tag | downcase }}" rel="category tag">
+	  {{ tag }}
+	</a>
+	{% endfor %}
+      </span>
+    </div><!--/entry-meta -->
   </header>
+  
+  <div class="entry-content">
+    {{ content }}
+  </div><!--/entry-content -->
 
-  <article class="post-content">
-  {{ content }}
-  </article>
-
-</div>
+  <footer class="entry-social">
+    <ul>
+      <li class="entry-share">
+	<a>
+	  COMPARTI:
+	</a>
+      </li>
+      <li class="facebook">
+	<a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url | append:page.url }}&amp;t={{ page.title | replace:' ','+' }}" target="_blank">
+	  <i class="fa fa-facebook"></i>
+	</a>
+      </li>
+      <li class="twitter">
+	<a href="https://twitter.com/intent/tweet?text={{ page.title | replace:' ','+' }}:&amp;url={{ site.url | append:page.url }}&amp;hashtags=PewenBlog" target="_blank">
+	  <i class="fa fa-twitter"></i>
+	</a>
+      </li>
+      <li class="google">
+	<a href="https://plus.google.com/share?{{ site.url | append:page.url }}" target="_blank">
+	  <i class="fa fa-google-plus"></i>
+	</a>
+      </li>
+    </ul>
+  </footer>
+  
+</article>

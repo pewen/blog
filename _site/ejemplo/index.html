@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
-  <title>Consectetur Elit test2 - Pewen Blog</title>
+  <title>Ejemplo de un post usando Markdown - Pewen Blog</title>
   <meta name="author" content="Franco N. Bellomo @fnbellomo Lucas E. Bellomo @ucaomo">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="canonical" href="https://pewen.github.io/2015/03/02/Elit%20test2/">
+  <link rel="canonical" href="https://pewen.github.io/ejemplo/">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -69,88 +69,188 @@
 
 	<div class="col-sm-8 col-md-9">
 	  <section>
-	    <h2 class="header-hidden">Post 02 March 2015</h2>
-
-
-<article class="entry">
+	    <article class="entry">
 
   
   <div class="entry-img">
-    <a href="/2015/03/02/Elit%20test2/">
-      <img src="/img/cole.png" alt="descipcción de la images" />
+    <a href="/ejemplo/">
+      <img src="/img/mandel.jpg" alt="descipcción de la images" />
     </a>
   </div>
   
   
   <header class="entry-header">
     <h3>
-      <a href="/2015/03/02/Elit%20test2/">
-        Consectetur Elit test2
+      <a href="/ejemplo/">
+        Ejemplo de un post usando Markdown
       </a>
     </h3>
 
     <div class="entry-meta">
       <span>
-	<i class="fa fa-calendar"></i>
-	02 March 2015
-      </span>
-      <span>
 	
 	<i class="fa fa-tag"></i>
-	<a href="/tag#test" rel="category tag">
-	  Test
-	</a>
-	
-	<i class="fa fa-tag"></i>
-	<a href="/tag#tag1" rel="category tag">
-	  Tag1
-	</a>
-	
-	<i class="fa fa-tag"></i>
-	<a href="/tag#tag2" rel="category tag">
-	  Tag2
+	<a href="/tag#ejemplo de post" rel="category tag">
+	  Ejemplo de post
 	</a>
 	
       </span>
-      				
     </div><!--/entry-meta -->
   </header>
   
   <div class="entry-content">
-    
+    <h2 id="creando-un-nuevo-post">Creando un nuevo post</h2>
 
-    
-    <p>Sed id lacus eu urna ullamcorper mattis. Etiam ut nunc erat. Sed et velit a\
-c nisi mattis mollis tempus id nulla. In varius fermentum posuere. Vivamus \
-suscipit accumsan arcu ac ullamcorper. Aliquam adipiscing, ante non eleifen\
-d blandit, nunc diam vulputate augue, eu convallis lorem lacus in lacus. Cu\
-rabitur ultricies ultrices diam, vel tincidunt dui rhoncus a. Vivamus at sa\
-pien in turpis consequat pharetra sit amet quis elit.</p>
+<p>Primero, se crea un nuevo archivo en el directorio <code>_post</code> llamado <code>yyyy-mm-dd-tinyTitle.md</code> donde <code>yyyy</code> es el año completo, <code>mm</code> el mes y <code>dd</code> el día. Jekyll utiliza esto para ordenar chonologicamente los post.<br />
+Si tenemos una idea sobre un nuevo post, pero no lo vamos a terminar de escribir ahora, lo podemos guardar en <code>_drafts</code>. Jekyll va a ignorar todos los archivos que estén dentro de este directorio.</p>
 
-<h2 id="nam-vel-justo-ut-nisl-rutrum-lobortis">Nam vel justo ut nisl rutrum lobortis</h2>
+<h2 id="template">Template</h2>
 
-<p>Donec at arcu nisi, quis euismod enim. Donec viverra felis vitae elit ornar\
-e porta. Vivamus ullamcorper consectetur odio, vitae imperdiet mi laoreet v\
-itae. Fusce ante ligula, cursus eget volutpat vel, pretium eget tellus.</p>
+<p>Las primeras lineas del post son:</p>
 
-    
+<pre><code>---
+layout: post
+title: Lorem Ipsum Dolor Sit Amet test2
+date: 2015-09-10
+tags: [Example, Test, Tag1]
+image: /img/mandel.jpg
+image-description: descipcción de la images
+image-author: Fulano
+author: Nico
+author-img: /img/authors/franco.png
+author-des: Estudiante de física
+author-twitter: fnbellomo
+author-facebook: franco.bellomo.12
+---
+</code></pre>
+
+<p>Donde <code>layout: post</code> nos indica el formato (la estética) del post. Por el momento solo existe un formato, pero se pueden diseñar varios. <code>title</code> es el titulo completo de la nota, <code>date</code> la fecha del post y <code>tags</code> son las etiquetas de la nota que luego se utilizan para hacer el cloud tag. Estos 4 primeros atributos son obligatorios. Si bien, los siguientes atributos son opcionales, el echo de que estén nos va a brindar un post mucho más completo.<br />
+El atributo <code>image</code> es el path a la imagen de portada del post. Todas las imagenes se las deben guardar en <code>/img/</code>. <code>image-description</code> es necesaria para hacer la el sitio accesible y <code>image-author</code> es, únicamente, el nombre o un link del autor de esta.
+Los últimos 5 atributos son con respecto al autor de la nota, donde el primer atributo (<code>author</code>) es su nombre, <code>author-img</code> el path a su imagen, <code>author-des</code> una breve descripción y los dos restantes son posibles contactos de redes sociales.</p>
+
+<h2 id="post">Post</h2>
+
+<p>El primer párrafo del post, es el que se muestra en la página principal del blog junto con todos los otros post. Por lo tanto, es importante que este sea un correcto resumen de nuestra nueva entrada. Debemos dejar una linea en blanco antes y despues de este párrafo.</p>
+
+<h3 id="ttulos">Títulos</h3>
+
+<p>Los títulos son muy simples de utilizar. Solo hay que agregar asteriscos al principio de la linea, donde el mínimo son 2 asteriscos (h2) y el máximo 6 (h6). Solo existe un titulo principal, que es el nombre del post.</p>
+
+<pre><code>### Ejemplo titulo de nivel 3
+</code></pre>
+
+<h3 id="nuevo-prrafo">Nuevo Párrafo</h3>
+
+<p>Para indicar el comienzo de un nuevo párrafo hay que dejar  un renglón en blanco entre cada uno.</p>
+
+<h3 id="links">Links</h3>
+
+<p>Existen dos formas de poner links. La primera es</p>
+
+<pre><code>...
+mira [este](duckduckgo.com) genial buscador
+...
+</code></pre>
+
+<p>De donde obtenemos: mira <a href="duckduckgo.com">este</a> genial buscador</p>
+
+<p>La segunda forma:</p>
+
+<pre><code>...
+mira [este][link_genial] genial buscador
+
+# al final del post
+[link_genial]: duckduckgo.com
+</code></pre>
+
+<p>En ambos casos, el resultado final es el mismo. Ahora, supongamos, que utilizamos un mismo link varias veces en el post. Si en algún momento necesitamos cambiar o actualizar el link, utilizando la segunda forma es muy simple ya que solo hay un link (<code>[link_genial]: duckduckgo.com</code>), mientras que utilizando la primer forma necesitamos actualizar link por link.</p>
+
+<h3 id="cdigo">Código</h3>
+
+<p>Para un bloque de código, simplemente de deja un reglón en blanco por encima y por debajo y se indexa todo el bloque  con 4 espacios (un tab).</p>
+
+<p>Para marcar nombres de paquetes o funciones dentro de un párrafo, se coloca ` al principio y final. Ejemplo:</p>
+
+<pre><code>usando la librería `numpy`
+</code></pre>
+
+<p>Nos genera: usando la librería <code>numpy</code></p>
+
+<h3 id="citas">Citas</h3>
+
+<p>Si queremos destacar alguna cita, lo hacemos mediante</p>
+
+<pre><code>&lt;blockquote&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+  &lt;footer&gt;Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;
+</code></pre>
+
+<p>Donde obtenemos:</p>
+
+<blockquote>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+
+<p>Además, dentro de las citas es posible poner link como se explico anteriormente.</p>
+
+<h3 id="imgenes">Imágenes</h3>
+
+<p>Es posible poner imágenes dentro de post</p>
+
+<pre><code>&lt;img alt="descripción de la img" src="/img/jekyll.jpg" class="mean-img" /&gt;
+</code></pre>
+
+<p><img alt="descripción de la img" src="/img/jekyll.jpg" class="mean-img" /></p>
+
+<p>Donde <code>src</code> nos indica la fuente de la imagen que puede ser un path (recordad que las imágenes siempre se las tiene que guardar en <code>/img</code>) o directamente el link de esta. El atributo <code>class</code> nos va a indicar el tamaño de la imagen donde las opciones son:</p>
+
+<ul>
+  <li><code>full-img</code>: tamaño completo</li>
+  <li><code>mean-img</code>: mitad del tamaño total</li>
+  <li><code>quarter-img</code>: un cuarto del tamaño total</li>
+</ul>
+
+<h3 id="imagen-con-texto">Imagen con texto</h3>
+
+<pre><code>&lt;div class="row"&gt;
+  &lt;div class="col-md-4"&gt;
+    &lt;img alt="descripción de la img" src="/img/jekyll.jpg" class="full-img" /&gt;
+  &lt;/div&gt;
+  &lt;div class="col-md-8"&gt;
+    &lt;p&gt;Texto al costado de la imagen. Hay que tener cuidado de que el texto no sobre pase el largo de la imagen para que no quede feo.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<div class="row">
+	<div class="col-md-4">
+		<img alt="descripción de la img" src="/img/jekyll.jpg" class="full-img" />
+	</div>
+	<div class="col-md-8">
+		<p>El contenedor del post (lo que tiene fondo blanco) se divide en 12 columnas. Luego, tenemos que especificar cuantas columnas va a tener el texto y cuantas la imagen. En este caso utilizamos `col-md-4` para la imagen y `col-md-8` para el texto.</p>
+	</div>
+</div>
+
+<h2 id="make">Make</h2>
+
+<p>Lo mas importante, correr el make:</p>
+
+<pre><code>$ cd blog
+$ jekyll build
+</code></pre>
+
+<p>¿Que pasa si nos quedo algo mal? como por ej, el path de una imagen, o algún texto, o lo que sea, entonces podemos correr un servidor local y ver lo que obtuvimos:</p>
+
+<pre><code>$ jekyll server --watch --baseurl=""
+</code></pre>
+
+<p>Por ahora, no le daremos importancia a los argumentos que le estamos pasando. Ahora, en nuestro navegador podemos ver lo que obtuvimos en <code>http://0.0.0.0:4000/</code></p>
+
   </div><!--/entry-content -->
-  
-  
-  
-  
-  
-  
-  
-  <footer class="entry-social">
-    <header class="header-hidden">
-      <h2>Comparti el post</h2>
-    </header>
 
-    
-    
-    
-    
+  <footer class="entry-social">
     <ul>
       <li class="entry-share">
 	<a>
@@ -158,17 +258,17 @@ itae. Fusce ante ligula, cursus eget volutpat vel, pretium eget tellus.</p>
 	</a>
       </li>
       <li class="facebook">
-	<a href="https://www.facebook.com/sharer/sharer.php?u=https://pewen.github.io/2015/03/02/Elit%20test2/&amp;t=Consectetur+Elit+test2" target="_blank">
+	<a href="https://www.facebook.com/sharer/sharer.php?u=https://pewen.github.io/ejemplo/&amp;t=Ejemplo+de+un+post+usando+Markdown" target="_blank">
 	  <i class="fa fa-facebook"></i>
 	</a>
       </li>
       <li class="twitter">
-	<a href="https://twitter.com/intent/tweet?text=Consectetur+Elit+test2:&amp;url=https://pewen.github.io/2015/03/02/Elit%20test2/&amp;hashtags=PewenBlog" target="_blank">
+	<a href="https://twitter.com/intent/tweet?text=Ejemplo+de+un+post+usando+Markdown:&amp;url=https://pewen.github.io/ejemplo/&amp;hashtags=PewenBlog" target="_blank">
 	  <i class="fa fa-twitter"></i>
 	</a>
       </li>
       <li class="google">
-	<a href="https://plus.google.com/share?https://pewen.github.io/2015/03/02/Elit%20test2/" target="_blank">
+	<a href="https://plus.google.com/share?https://pewen.github.io/ejemplo/" target="_blank">
 	  <i class="fa fa-google-plus"></i>
 	</a>
       </li>
@@ -176,169 +276,6 @@ itae. Fusce ante ligula, cursus eget volutpat vel, pretium eget tellus.</p>
   </footer>
   
 </article>
-
-
-<div class="box">
-  <h2 class="box-title">Related post</h2>
-  <div class="row">
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    
-    
-    <div class="col-sm-6 col-md-4">
-      <img class="full-img" alt="descipcción de la images" src="/img/metal.jpg" />
-      <h3><a href="/2015/09/16/welcome-to-jekyll/">Welcome to Jekyll!</a></h3>
-      <div class="entry-meta relate-meta">
-	16 September 2015
-	 
-    <span>
-      <i class="fa fa-tag"></i>
-      <a href="/tag#tag2" rel="category tag">
-	Tag2
-      </a>
-    </span>
-    
-      </div><!--/entry-meta -->
-    </div><!--/col -->
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-
-    
-
-    
-    
-    <div class="col-sm-6 col-md-4">
-      <img class="full-img" alt="descipcción de la images" src="/img/mandel.jpg" />
-      <h3><a href="/2015/09/10/Lore%20test2/">Lorem Ipsum Dolor Sit Amet test2</a></h3>
-      <div class="entry-meta relate-meta">
-	10 September 2015
-	 
-    <span>
-      <i class="fa fa-tag"></i>
-      <a href="/tag#test" rel="category tag">
-	Test
-      </a>
-    </span>
-     
-    <span>
-      <i class="fa fa-tag"></i>
-      <a href="/tag#tag1" rel="category tag">
-	Tag1
-      </a>
-    </span>
-    
-      </div><!--/entry-meta -->
-    </div><!--/col -->
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-
-    
-
-    
-    
-    <div class="col-sm-6 col-md-4">
-      <img class="full-img" alt="descipcción de la images" src="/img/mandel.jpg" />
-      <h3><a href="/2015/09/10/Lore%20test/">Lorem Ipsum Dolor Sit Amet test</a></h3>
-      <div class="entry-meta relate-meta">
-	10 September 2015
-	 
-    <span>
-      <i class="fa fa-tag"></i>
-      <a href="/tag#test" rel="category tag">
-	Test
-      </a>
-    </span>
-     
-    <span>
-      <i class="fa fa-tag"></i>
-      <a href="/tag#tag1" rel="category tag">
-	Tag1
-      </a>
-    </span>
-    
-      </div><!--/entry-meta -->
-    </div><!--/col -->
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-    
-
-    
-
-    
-    
-    
-
-    
-    
-  </div><!--/row -->
-</div><!--/box -->
-
 
 	  </section>
 	</div><!--/col-md-9 -->

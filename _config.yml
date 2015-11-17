@@ -16,9 +16,13 @@ paginate: 4
 paginate_path: "/page:num/"
 
 # Build settings
-markdown: kramdown
-permalink: pretty
 exclude: [.git, .gitignore]
+
+# Conversion
+markdown: kramdown
+
+# Outputting
+permalink: pretty
 
 # Social links
 twitter_username: jekyllrb
