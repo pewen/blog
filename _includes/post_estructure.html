@@ -82,6 +82,7 @@
 		{% if post.author-facebook %}
 		<li class="facebook">
 		  <a href="https://www.facebook.com/{{ post.author-facebook}}" target="_blank">
+		    Compartí el post mediante facebook
 		    <i class="fa fa-facebook"></i>
 		  </a>
 		</li>
@@ -127,17 +128,17 @@
 	</a>
       </li>
       <li class="facebook">
-	<a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url | append:post.url }}&amp;t={{ post.title | replace:' ','+' }}" target="_blank">
+	<a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url | append:post.url }}&amp;t={{ post.title | replace:' ','+' }}" target="_blank" title="Compartí el post mediante facebook">
 	  <i class="fa fa-facebook"></i>
 	</a>
       </li>
       <li class="twitter">
-	<a href="https://twitter.com/intent/tweet?text={{ post.title | replace:' ','+' }}:&amp;url={{ site.url | append:post.url }}&amp;hashtags=PewenBlog" target="_blank">
+	<a href="https://twitter.com/intent/tweet?text={{ post.title | replace:' ','+' }}:&amp;url={{ site.url | append:post.url }}&amp;hashtags=PewenBlog" target="_blank" title="Compartí el post mediante twitter">
 	  <i class="fa fa-twitter"></i>
 	</a>
       </li>
       <li class="google">
-	<a href="https://plus.google.com/share?{{ site.url | append:post.url }}" target="_blank">
+	<a href="https://plus.google.com/share?{{ site.url | append:post.url }}" target="_blank" title="Compartí el post mediante google+">
 	  <i class="fa fa-google-plus"></i>
 	</a>
       </li>
